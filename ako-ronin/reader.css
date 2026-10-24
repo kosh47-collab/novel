@@ -1,0 +1,23 @@
+/* Shared reader controls: all chapters, interludes and contents. */
+:root{--reader-font-size:18px;--paper:#f8f5ee;--ink:#2c2924;--soft:#eee7da;--line:#b5a68e}
+html[data-theme=night]{--paper:#1c201e;--ink:#eee5d5;--soft:#303730;--line:#756e60}
+html[data-theme=night] body{background:var(--paper);color:var(--ink)}
+html[data-theme=night] main a{color:#e6bf85}
+html[data-theme=night] .note{background:var(--soft);color:var(--ink)}
+main{font-size:var(--reader-font-size)}
+body.hide-ruby rt,body.hide-ruby rp{display:none}
+.reader-launch{position:fixed;top:auto;left:auto;right:14px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:1000}
+.reader-launch button,.reader-panel button{background:var(--soft);color:var(--ink);border:1px solid var(--line);padding:10px 13px;border-radius:10px;font:14px system-ui,sans-serif;cursor:pointer;min-height:44px}
+.reader-launch button{box-shadow:0 3px 15px #0003}
+.reader-panel[hidden]{display:none!important}
+.reader-panel{position:fixed;top:auto;left:auto;right:14px;bottom:calc(78px + env(safe-area-inset-bottom,0px));z-index:1001;width:min(355px,calc(100vw - 28px));max-height:calc(100dvh - 110px - env(safe-area-inset-bottom,0px));overflow:auto;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:15px;box-shadow:0 10px 40px #0004;padding:16px;font:14px/1.6 system-ui,sans-serif;box-sizing:border-box}
+.reader-panel-head,.reader-option{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.reader-links{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0}
+.reader-panel a{color:var(--ink)}
+.reader-hint{font-size:12px;text-indent:0;margin:10px 0 0}
+.size-buttons{display:flex;align-items:center;gap:8px}
+#reading-progress{position:fixed;top:auto;bottom:0;left:0;right:0;height:6px;background:#d8cebd;z-index:1002;pointer-events:none}
+#reading-progress-fill{height:100%;width:0;background:#996136;transition:width .1s linear}
+html[data-theme=night] #reading-progress{background:#55564f}
+html[data-theme=night] #reading-progress-fill{background:#edc078}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#reading-progress-fill{transition:none}}
