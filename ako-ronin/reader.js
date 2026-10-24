@@ -13,6 +13,7 @@
   function setPanel(visible){if(visible){panel.showModal();close.focus()}else if(panel.open){panel.close();open.focus()}open.setAttribute('aria-expanded',String(visible))}
   open.addEventListener('click',()=>setPanel(!panel.open));close.addEventListener('click',()=>setPanel(false));
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.open)setPanel(false)});
+  panel.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setPanel(false)));
   panel.addEventListener('close',()=>open.setAttribute('aria-expanded','false'));
   panel.addEventListener('click',e=>{if(e.target===panel){const rect=panel.getBoundingClientRect();if(e.clientX<rect.left||e.clientX>rect.right||e.clientY<rect.top||e.clientY>rect.bottom)setPanel(false)}});
   function viewport(){root.style.setProperty('--reader-viewport-height',(window.visualViewport?window.visualViewport.height:innerHeight)+'px')}

@@ -94,3 +94,12 @@ main .historical-note-body .reference-list{padding-left:1.3em;margin:.7em 0 0;li
 main .historical-note-body .reference-list li{margin:.65em 0;overflow-wrap:anywhere}
 main .historical-note-body .reference-list a{color:var(--accent,#73583a);text-underline-offset:.2em}
 main .historical-note-body .note-dates{font-size:.9em;color:var(--muted,#6e6253);margin:0 0 1em}
+
+/* Character guides use one consistent structure throughout the ten chapters. */
+main .character-list{margin:0;padding:0}
+main .character-list>div{padding:18px 0;border-bottom:1px solid var(--line)}
+main .character-list>div:first-child{padding-top:0}
+main .character-list dt{font-weight:700;line-height:1.8;margin:0 0 5px;overflow-wrap:anywhere}
+main .character-list dd{margin:0;line-height:1.9;overflow-wrap:break-word}
+main .character-role{display:block;color:var(--muted,#6e6253);font-size:.85em;line-height:1.7;margin-bottom:5px}
+main .character-summary{display:block}
