@@ -103,3 +103,20 @@ main .character-list dt{font-weight:700;line-height:1.8;margin:0 0 5px;overflow-
 main .character-list dd{margin:0;line-height:1.9;overflow-wrap:break-word}
 main .character-role{display:block;color:var(--muted,#6e6253);font-size:.85em;line-height:1.7;margin-bottom:5px}
 main .character-summary{display:block}
+
+/* Compact chapter headers; chapter selection remains in the reading menu. */
+.book-header.book-header-compact{padding-top:12px;padding-bottom:12px}
+.book-header-compact .book-title{font-size:14px;line-height:1.5;margin-bottom:7px;font-weight:500}
+.book-header-compact .book-nav{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;max-width:770px;font-size:14px}
+.book-header-compact .book-nav a{padding:3px 0;line-height:1.6}
+dialog.reader-panel .reader-chapter{display:block}
+.reader-chapter label{display:block;margin-bottom:8px;font-size:13px}
+.reader-chapter select{display:block;width:100%;min-width:0;max-width:100%;box-sizing:border-box;padding:10px 8px;border:1px solid var(--line);border-radius:8px;background:var(--soft);color:var(--ink);font:16px/1.5 system-ui,sans-serif;min-height:44px}
+.book-footer.contents-footer{text-align:center;padding:32px 22px 100px;border-top:3px solid #a38b66}
+.contents-footer-inner{max-width:580px;margin:0 auto}
+.contents-footer .footer-kicker{margin:0 0 10px;font-size:12px;letter-spacing:.18em;color:#cbbfa9}
+.contents-footer .footer-book-title{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:26px;line-height:1.6;letter-spacing:.12em;margin:0}
+.footer-book-title span{display:block;font-size:15px;font-weight:400;letter-spacing:.16em;margin-top:3px}
+.contents-footer .footer-volume{font-size:12px;margin:14px 0 22px;color:#cbbfa9}
+.contents-footer .footer-actions{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:12px 24px}
+.contents-footer .footer-start{padding:10px 18px;border:1px solid #cbbfa9;border-radius:8px;color:#293630;background:#f2e7d5;text-decoration:none}
