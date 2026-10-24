@@ -10,10 +10,13 @@
   let ruby=storage.get('ako-reading-ruby')!=='0';
   const savedPosition=Number(storage.get(positionKey));
   const panel=$('reader-panel'),open=$('reader-open'),close=$('reader-close');
-  function setPanel(visible){panel.hidden=!visible;open.setAttribute('aria-expanded',String(visible));if(visible)$('reader-close').focus();else open.focus()}
-  open.addEventListener('click',()=>setPanel(panel.hidden));close.addEventListener('click',()=>setPanel(false));
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden)setPanel(false)});
-  document.addEventListener('pointerdown',e=>{if(!panel.hidden&&!panel.contains(e.target)&&!open.contains(e.target)){panel.hidden=true;open.setAttribute('aria-expanded','false')}});
+  function setPanel(visible){if(visible){panel.showModal();close.focus()}else if(panel.open){panel.close();open.focus()}open.setAttribute('aria-expanded',String(visible))}
+  open.addEventListener('click',()=>setPanel(!panel.open));close.addEventListener('click',()=>setPanel(false));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.open)setPanel(false)});
+  panel.addEventListener('close',()=>open.setAttribute('aria-expanded','false'));
+  panel.addEventListener('click',e=>{if(e.target===panel){const rect=panel.getBoundingClientRect();if(e.clientX<rect.left||e.clientX>rect.right||e.clientY<rect.top||e.clientY>rect.bottom)setPanel(false)}});
+  function viewport(){root.style.setProperty('--reader-viewport-height',(window.visualViewport?window.visualViewport.height:innerHeight)+'px')}
+  viewport();addEventListener('resize',viewport);if(window.visualViewport)window.visualViewport.addEventListener('resize',viewport);
   function apply(){document.body.classList.toggle('hide-ruby',!ruby);$('ruby-toggle').textContent=ruby?'ルビ：オン':'ルビ：オフ';$('ruby-toggle').setAttribute('aria-pressed',String(ruby));root.dataset.theme=night?'night':'paper';root.style.setProperty('--reader-font-size',size+'px');$('night-toggle').textContent=night?'通常表示':'夜表示';$('night-toggle').setAttribute('aria-pressed',String(night));$('font-current').textContent=size+'px';$('font-minus').disabled=size<=14;$('font-plus').disabled=size>=26}
   $('ruby-toggle').addEventListener('click',()=>{ruby=!ruby;storage.set('ako-reading-ruby',ruby?'1':'0');apply();requestAnimationFrame(()=>update(false))});
   $('night-toggle').addEventListener('click',()=>{night=!night;storage.set(modeKey,night?'1':'0');apply()});
