@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>第六章 円山の決断｜赤穂浪士 元禄の忠義</title><style>body{margin:0;background:#f7f2e8;color:#29251e;font-family:'Yu Mincho','Hiragino Mincho ProN',serif;line-height:2.15}main{max-width:750px;margin:auto;padding:45px 22px 100px}h1{font-size:2rem;letter-spacing:.13em}h2{font-size:1.3rem;margin-top:3em;border-bottom:1px solid #b7a991;padding-bottom:.5em}p{text-indent:1em;margin:1.3em 0}.dialogue{text-indent:0;margin-left:1em}.note{background:#eee6d8;padding:20px;font-size:.92rem}header,footer{background:#28342f;color:#f7f2e8;padding:15px 25px}a{color:#79552c}.sub{color:#806d53}button{padding:8px 13px;border:1px solid #aaa;background:transparent;color:inherit;border-radius:6px}body.night{background:#171b1b;color:#ddd5c7}body.night .note{background:#30332f}body.night a{color:#e4bb7e}</style><style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f8f5ee;color:#2c2924;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:18px;line-height:2.25}header,footer{background:#293630;color:#fff;padding:12px 22px}header a,footer a{color:#f2e7d5}main{max-width:770px;margin:auto;padding:34px 23px 90px}h1{font-size:clamp(1.8rem,5vw,2.5rem);letter-spacing:.13em}h2{font-size:1.27em;margin:3em 0 1.5em;border-bottom:1px solid #c9bba6;padding-bottom:.5em}p{margin:1.1em 0;text-indent:1em}p.dialogue{text-indent:0;margin:1.5em 0}p.inner{font-style:italic;color:#625141;margin:1.6em 1em;text-indent:0}p.break{text-align:center;text-indent:0;color:#8b7962;margin:2em 0}nav{display:flex;gap:15px;flex-wrap:wrap}a{color:#73583a}.kicker{color:#826d51;letter-spacing:.14em;font-size:.85em}.note{padding:15px 18px;background:#eee7da;border-left:3px solid #9b7a51;font-size:.85em;line-height:1.8;margin:24px 0}.note p{text-indent:0;margin:.4em 0}ruby rt{font-size:.52em}body.hide-ruby rt{display:none}.reader-tools{position:fixed;z-index:40;top:12px;right:12px;background:#f2eadc;color:#2c2924;border-radius:12px;padding:10px;display:flex;gap:9px;align-items:center;box-shadow:0 5px 22px #0003;font:14px system-ui,sans-serif}.reader-tools button{border:1px solid #9b907d;border-radius:20px;background:white;padding:8px 12px;cursor:pointer;color:#29251f}button:focus-visible{outline:3px solid #8d7452}@media(max-width:700px){.reader-tools{top:auto;bottom:16px;left:12px;right:12px;justify-content:center;transform:translateY(calc(100% + 35px));opacity:0;pointer-events:none;transition:transform .22s,opacity .22s}body.menu-open .reader-tools{transform:translateY(0);opacity:1;pointer-events:auto}}
+/* 組版は一元管理。行末の自動均等化やpretty折返しは使用しない */
+main section p{display:block;max-width:none;width:auto;line-height:1.9;margin:.9em 0;text-align:start;text-wrap:wrap;letter-spacing:normal;word-spacing:normal;white-space:normal;word-break:normal;overflow-wrap:normal;line-break:strict;text-indent:1em}
+main section p.dialogue{margin:.35em 0 .55em;text-indent:0}
+main section p.dialogue+p.dialogue{margin-top:.15em}
+main section p.inner{margin:1em 0 1.1em 1em;text-indent:0;font-style:italic}
+main section p.break{text-align:center;text-indent:0;margin:2em 0}
+main section ruby{white-space:normal}
+@media(max-width:700px){main{padding-left:20px;padding-right:20px}}
+
+main p.dialogue {text-indent:0 !important; margin-top:.28em !important; margin-bottom:.28em !important;}
+main p.dialogue + p.dialogue {margin-top:.12em !important;}
+
+main p.dialogue{text-indent:0!important;margin-top:.28em!important;margin-bottom:.28em!important;}
+
+/* Unified, compact reader controls */
+:root{--reader-font-size:18px}
+html{scroll-behavior:smooth;scroll-padding-top:75px}
+main{font-size:var(--reader-font-size);overflow-wrap:break-word;min-width:0}
+main p,main li,main .person,main .panel{overflow-wrap:break-word}
+.reader-launch{position:fixed;right:max(12px,calc((100vw - 780px)/2));top:12px;z-index:30}
+.reader-launch button,.reader-panel button{font-family:system-ui,sans-serif;border:1px solid var(--line);border-radius:10px;background:var(--soft);color:var(--ink);padding:9px 12px;cursor:pointer;touch-action:manipulation}
+.reader-launch button{box-shadow:0 3px 16px #0002;font-size:13px;min-height:42px}
+.reader-panel[hidden]{display:none!important}
+.reader-panel{position:fixed;right:max(12px,calc((100vw - 780px)/2));top:62px;z-index:31;width:min(355px,calc(100vw - 24px));max-height:calc(100dvh - 78px);overflow:auto;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:15px;box-shadow:0 12px 45px #0004;padding:16px;font-family:system-ui,sans-serif;font-size:14px}
+.reader-panel-head,.reader-option{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.reader-panel-head{padding-bottom:12px;border-bottom:1px solid var(--line)}
+.reader-panel-head button{padding:5px 11px}
+.reader-option{padding:14px 0;border-bottom:1px solid var(--line)}
+.size-buttons{display:flex;align-items:center;gap:8px}
+.size-buttons button{font-size:21px;font-weight:600;width:43px;height:43px;padding:0}
+.size-buttons output{min-width:43px;text-align:center;font-variant-numeric:tabular-nums}
+.reader-panel button:disabled{opacity:.4;cursor:default}
+.reader-links{display:flex;justify-content:space-between;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}
+.reader-links a{color:var(--accent);text-decoration:underline}
+.reader-hint{font-size:12px;line-height:1.7;color:var(--muted);margin:10px 0 0;text-indent:0}
+#reading-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:35;pointer-events:none}
+#reading-progress-fill{height:100%;width:0;background:#aa6d4b;transition:width .1s linear}
+@media(max-width:600px){header{padding-right:145px}main{padding:38px 18px 75px}.people{grid-template-columns:1fr}}
+
+/* Chapter theme and text flow */
+:root{--paper:#f8f5ee;--ink:#2c2924;--muted:#6e6253;--line:#d8ccbb;--accent:#73583a;--soft:#eee7da}
+body{background:var(--paper)!important;color:var(--ink)!important}
+main{font-size:var(--reader-font-size)!important;overflow-wrap:break-word;max-width:770px}
+main section p{overflow-wrap:break-word;word-break:normal;white-space:normal;text-align:left;text-wrap:wrap}
+html[data-theme="night"]{--paper:#1e2324;--ink:#e9e0d3;--muted:#b7aaa0;--line:#555c5c;--accent:#d8bb8d;--soft:#343838;color-scheme:dark}
+html[data-theme="night"] .note{background:#343838;color:var(--ink)}
+html[data-theme="night"] main .inner{color:#c4af91}
+html[data-theme="night"] h2{border-color:#62605b}
+html[data-theme="night"] main a{color:var(--accent)}
+html[data-theme="night"] header a,html[data-theme="night"] footer a{color:#f2e7d5}
+@media(max-width:600px){header{padding-right:150px!important}}
+
+.interlude-intro{font-size:1.06em;line-height:2.0}.map-frame,.diagram{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px;margin:20px 0}.map-frame svg{display:block;width:100%;height:auto}.map-caption,.smallnote{font-size:.78em;color:var(--muted);line-height:1.8;text-indent:0}.people-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.person-card{background:var(--soft);border:1px solid var(--line);padding:13px;border-radius:10px;line-height:1.7}.person-card strong{display:block}.person-card span{display:block;font-size:.82em;color:var(--muted)}.relation{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center}.relation .wide{grid-column:1/-1;text-align:center}.relation .person-card{text-align:center}.relation-arrow{text-align:center;font-size:.8em;color:var(--muted);padding:4px}.timeline{border-left:2px solid var(--accent);margin-left:12px;padding-left:22px}.timeline article{position:relative;margin:0 0 24px}.timeline article:before{content:"";position:absolute;left:-29px;top:10px;width:11px;height:11px;border-radius:50%;background:var(--accent)}.timeline time{font-weight:bold;color:var(--accent)}.timeline p{margin:.3em 0;text-indent:0}.tag{font-size:.8em;color:var(--muted)}.reader-links{flex-wrap:wrap}main .map-frame p,main .diagram p,main .person-card p{ text-indent:0 }@media(max-width:600px){.people-grid{grid-template-columns:1fr}.map-frame,.diagram{padding:10px}.relation{gap:7px}.person-card{padding:9px}}
+
+/* 第一本幕間：図版の横幅と縮尺を保つ */
+.relationship-figure,.accurate-map{width:100%;max-width:100%;overflow:hidden;margin:22px 0;border-radius:12px;}
+.relationship-figure svg,.accurate-map svg{display:block;width:100%;height:auto;aspect-ratio:auto;}
+.relationship-figure{border:1px solid var(--line,#d5c8b4);background:#f8f5ef;}
+body.night .relationship-figure,body.dark .relationship-figure{background:#f8f5ef;}
+.accurate-map{border:1px solid #c5cfc9;}
+@media(max-width:600px){.relationship-figure{overflow-x:auto}.relationship-figure svg{min-width:570px}.accurate-map svg{min-width:0}}
+
+/* 序章と共通の広域地図 */
+.shared-story-map{background:#f1ece2;padding:12px;overflow:hidden}
+.shared-story-map svg{display:block;width:100%;height:auto;max-width:100%}
+.shared-story-map .map-label text{font-size:15px;fill:#473d30;paint-order:stroke;stroke:#f3ebd8;stroke-width:4px;stroke-linejoin:round}
+.shared-story-map .map-label .important{font-size:22px;font-weight:bold}
+.shared-story-map .map-point circle{fill:#6e6556;stroke:#fff7e6;stroke-width:2}
+.shared-story-map .map-point .major{fill:#a14e3d}
+</style></head>
+<body><header>赤穂浪士 — 元禄の忠義</header><div class="reader-launch"><button aria-controls="reader-panel" aria-expanded="false" aria-label="読書メニューを開く" id="reader-open" type="button">☰ <span>読書メニュー</span></button></div><div class="reader-panel" hidden="" id="reader-panel"><div class="reader-panel-head"><strong>読書メニュー</strong><button aria-label="閉じる" id="reader-close" type="button">✕</button></div><div class="reader-option"><span>画面表示</span><button id="night-toggle" type="button">夜表示</button></div><div class="reader-option"><span>文字サイズ</span><div class="size-buttons"><button aria-label="文字を小さくする" id="font-minus" type="button">−</button><output aria-live="polite" id="font-current">18px</output><button aria-label="文字を大きくする" id="font-plus" type="button">＋</button></div></div><div class="reader-links"><a href="chapter05.html">← 前へ</a><a href="index.html">総合目次</a><a href="interlude02.html">次へ →</a></div><div class="reader-option"><span>前回の位置</span><button id="resume-reading" type="button">続きから</button></div><p class="reader-hint">表示設定は各章と共通です。読書位置はこのページごとに保存します。</p></div><main><div class="sub">長編歴史小説｜第六章・完成稿</div><h1>円山の決断</h1><p class="sub">元禄十五年、夏。再興への道が閉ざされたとき、男たちは別の道を選んだ。</p>
+<h2>序　空いた席</h2>
+<p>妻子を豊岡へ送り出してから、山科の家は夜が早くなった。暮れ六つを過ぎると、襖の向こうに人の気配がない。誰かの咳も、子の足音も、台所から聞こえる鍋の音もなかった。内蔵助はそれらが消えたことを、昼間は忘れたふりができた。夜にはできなかった。</p>
+<p>灯のそばには二通の書状が置かれていた。一通は江戸から、もう一通は但馬から。江戸の文には名と日付と問いが並び、但馬の文には子らの様子が綴られている。どちらも返事を待っていた。どちらにも、書けぬことがあった。</p>
+<p>内蔵助は筆を取った。『皆、息災に暮らすよう』と書いて止まる。誰に向けた言葉なのか、自分でもわからなくなった。</p>
+<p>庭の竹が風に鳴った。春はとうに過ぎていた。雨を含んだ土から夏の匂いが上がってくる。時だけが、相談もなく先へ進む。</p>
+<p>かつて赤穂で名を呼べば振り向いた者たちは、今ではそれぞれ違う土地の空を見ている。城を失った日より、むしろそのことの方が、失ったものの大きさを教えた。</p>
+<h2>一　六月の客</h2>
+<p>六月の終わり、京都へ堀部安兵衛が来たという知らせが届いた。江戸で待ち続けた男の名は、それだけで座敷の空気を変えた。</p>
+<p>内蔵助は知らせを聞き、すぐには顔を上げなかった。堀部が来る理由は、尋ねずともわかる。</p>
+<p>その夜、原惣右衛門が訪ねてきた。雨上がりの道を歩いたらしく、草履の縁に泥がついていた。</p>
+<p class="dialogue">「江戸では、もはや待つという言葉が通りませぬ」</p><p>原は言い終えると、濡れた袖を膝の上で押さえた。急ぎ足で来たことを悟られまいとしているのか、あるいは言葉の勢いを自分で抑えようとしているのか。内蔵助には判じかねた。</p><p class="dialogue">「待つことが苦しいのは、江戸ばかりではない」</p><p>内蔵助の返事に、原は目を伏せた。</p><p class="dialogue">「存じております。されど、苦しみが同じなら、なおのこと言葉を交わさねばなりませぬ」</p><p>かつてなら、城中で顔を合わせ、役目の終わりに一言を添えることができた。いまは一通の書状が往復する間に、相手の胸で疑いが育つ。離れて暮らすということは、距離の分だけ沈黙が増えることだった。</p>
+<p>原は膝をそろえた。声を荒らげてはいない。だからこそ、言葉が重かった。</p>
+<p class="dialogue">「堀部殿も、ただ急げと申しているのではありません。待つなら何を待つのか、いつまで待つのか。それを示せと」</p>
+<p>内蔵助は茶碗に手を添えた。湯はすでにぬるくなっている。</p>
+<p class="dialogue">「大学様のご沙汰を待つ。それは変わらぬ」</p>
+<p class="dialogue">「そのご沙汰が、望みどおりでなければ」</p>
+<p class="dialogue">「そのときは、そのときの答えを出す」</p>
+<p>原は黙った。問いに答えたようで、まだ何も答えていないと感じたのだろう。内蔵助自身、そう思った。</p>
+<p class="dialogue">「殿」</p>
+<p>原が初めて、わずかに身を乗り出した。</p>
+<p class="dialogue">「江戸の者は、殿の覚悟を疑うているのではありませぬ。殿の胸の内が見えぬことに耐えかねておるのです」</p>
+<p>内蔵助は返さなかった。胸の内をすべて見せれば、誰も傷つかずに済むのか。そうではあるまい。だが見せぬことで傷つく者もいる。</p>
+<p>雨だれが軒を打ち始めた。原が去ったあとも、その音は長く続いた。</p>
+<h2>二　京の夏</h2>
+<p>京の町は祭りの季節へ向かっていた。商家の軒先には涼を呼ぶ支度があり、通りには荷を担ぐ男と買い物帰りの女が交じる。都は誰かの悲嘆のために足を止めたりしない。</p>
+<p>内蔵助は人の流れの中を歩いた。通り過ぎる顔に、自分を知る者はいない。いや、知っていても知らぬふりをしている者がいるかもしれない。</p>
+<p>茶屋の奥から笑い声が聞こえた。内蔵助はその声に一瞬だけ足を止めた。笑うことを忘れたわけではない。だが笑っている間にも、江戸で剣を磨く者がいる。豊岡では、りくが子らを寝かしつけている。</p>
+<p>町外れの小さな寺で、内蔵助はひとり腰を下ろした。庭の石には苔がつき、日差しの届かぬ隅だけが湿っている。</p>
+<p class="dialogue">「いつまで、という問いか」</p>
+<p>声に出すと、問いは思いのほか小さかった。</p>
+<p>亡き主君の弟に家が残るなら、赤穂の者たちにも別の明日がありうる。そう信じて、内蔵助は一年余りをつないできた。だが望みとは、手の中にあるものではない。誰かの裁きを待つあいだ、指の間からこぼれ落ちてゆくものだった。</p>
+<p>その日、内蔵助は江戸への返書に、もうしばらくの辛抱を求める言葉を記した。書き終えると、墨が乾くまで紙を見つめた。言葉の乾く早さと、人の心の乾く早さは違う。</p>
+<h2>三　七月十八日</h2>
+<p>元禄十五年七月十八日。江戸で浅野大学長広に、広島藩への差し置きが命じられた。</p>
+<p>幾日かして、その知らせが山科へ届いたとき、内蔵助は庭先にいた。使いの者は息を整える間も惜しみ、書状を差し出した。</p>
+<p>封を切る音が、妙にはっきり聞こえた。内蔵助は行を追い、一度だけ初めに戻って読み直した。文字は変わらなかった。</p><p>差し置きという言葉を、内蔵助は心の中で繰り返した。大学の身に危害が及ぶとの知らせではない。それなのに、胸の底に沈んだものは、救いの知らせを受けた者の重さではなかった。</p><p>これまで、内蔵助は「まだ決まっておらぬ」と言うことができた。その一言で、焦る者をなだめ、離れようとする者をつなぎ留め、自らの迷いにも形を与えてきた。だが今は、同じ言葉を口にすれば、己に嘘をつくことになる。</p>
+<p class="dialogue">「……そうか」</p>
+<p>使いの者は何も言わなかった。何か慰めを探している顔だったが、慰めの形をした言葉ほど、今は役に立たない。</p>
+<p>大学様が生きておられることと、赤穂浅野家が旧領へ戻ることとは、同じではない。内蔵助は、その区別を誰より知っていたはずだった。だが知っていることと、受け入れることは違う。</p>
+<p>彼は書状を畳み、膝の上に置いた。赤穂城の門を開いた日が脳裏に浮かんだ。あのときは、門の外にまだ道があると信じた。主君の弟が家名を継ぎ、散った家臣たちが戻れる道。</p>
+<p>今、その道の先に門はなかった。</p><p>内蔵助は書状の折り目を指でなぞった。浅野大学が生きている。それは安堵すべきことのはずだった。だが、大学が生き延びたことを喜ぶ心と、家を再び立てる望みが失われたことを嘆く心は、胸の中で折り合わなかった。</p><p class="dialogue">「ご無事であられる」</p><p>そう口にしてみた。言葉は正しい。正しい言葉であっても、人を慰めきれぬことがある。</p><p>彼は一度立ち上がり、部屋の端まで歩いた。呼ぶべき者の顔が次々に浮かんだ。急げと迫ってきた者、待てと説いた者、すでに去った者。知らせは一つでも、受け取る者の数だけ意味が変わる。</p>
+<p class="dialogue">「吉田を呼んでくれ」</p>
+<p>内蔵助はようやく言った。</p>
+<p class="dialogue">「それから原殿にも。江戸から来ている堀部殿にも、話を通したい」</p>
+<p>使いが立つと、内蔵助は一人になった。座敷の奥に、子が使っていた小さな道具が残っていた。指で触れると、薄く埃がついた。</p>
+<p>失われたのは家名だけではない。その名のもとに生き直せるかもしれなかった人々の、まだ来ぬ暮らしだった。</p>
+<p>内蔵助は道具を元の場所へ戻した。悲しみを数えていては、誰にも会えなくなる。</p>
+<h2>四　知らせを受けた者たち</h2>
+<p>吉田忠左衛門は、内蔵助の話を最後まで聞いた。途中で口を挟まなかった。</p>
+<p class="dialogue">「大学様のことは、これで決したと見るほかあるまい」</p>
+<p>内蔵助が言うと、吉田は深くうなずいた。</p>
+<p class="dialogue">「江戸の者へも、直ちに知らせましょう」</p>
+<p class="dialogue">「知らせるだけでは済まぬ」</p>
+<p class="dialogue">「承知しております」</p>
+<p>吉田の声には、年長の者だけが持つ疲れがあった。若い者の血気を叱ることはできる。だがその血気の奥にある悲しみを、消すことはできない。</p>
+<p>別の場所では、知らせを受けた旧臣が小さく息を吐いた。</p>
+<p class="dialogue">「ならば、ようやく決まるのか」</p>
+<p>そう言った男は、喜んでいるのではなかった。長く宙づりになっていた命に、ようやく行き先が与えられると思ったのだ。</p>
+<p>しかし、別の男は首を振った。</p>
+<p class="dialogue">「決まるとは何がだ。われらが死ぬことか。それで残る家族はどうなる」</p>
+<p class="dialogue">「主君の無念を、そのままにするのか」</p>
+<p class="dialogue">「無念を晴らすのと、妻子を飢えさせるのと、どちらが義か」</p>
+<p>言葉は鋭くなったが、誰も相手を憎んではいなかった。相手の顔に、自分が捨てきれぬ迷いが映っていたからだ。</p>
+<p>内蔵助はその場にいなかった。だが、のちにこうした声を聞くことになる。彼が率いようとするのは、同じ考えの男たちではない。同じ傷を負いながら、違う痛み方をしている者たちだった。</p>
+<h2>五　円山へ</h2>
+<p>七月二十八日、京の円山に同志たちが集まった。夏の湿気が衣の内側にこもり、座敷の障子の向こうでは蝉が鳴いていた。</p>
+<p>十九人。集まった者の数は多くはない。だが一人ひとりの背後には、ここに来られなかった者、すでに去った者、返事を待つ者がいた。</p><p>部屋に入ると、誰もがまず他の者の顔を見た。会うたびに人数が減ったように思える。実際に減ったのか、かつて赤穂で見慣れた顔を探してしまうためなのか。内蔵助は上座に進むまでの短い距離を、ひどく長く感じた。</p><p>隅には水の入った器が置かれ、襖の近くには風が通るようわずかな隙間がある。だが暑さは動かなかった。衣擦れと咳払いの音だけが、誰も口を開かない時間を測っていた。</p>
+<p>堀部安兵衛は、内蔵助の顔を見た。前年、江戸で向き合ったときと変わらぬようにも見える。だが目の下に刻まれた影は、あのころより深い。</p>
+<p class="dialogue">「内蔵助殿」</p>
+<p>堀部が口を開いた。</p>
+<p class="dialogue">「今度こそ、待つ理由はなくなりましたな」</p>
+<p>座敷に小さな緊張が走った。</p>
+<p class="dialogue">「ああ」</p>
+<p>内蔵助は答えた。</p>
+<p class="dialogue">「大学様のご処分が定まった。われらが望んだ道は閉ざされた」</p>
+<p>堀部は一度だけうなずいた。勝った者の顔ではなかった。自分が待ち望んだ討ち入りへの道は、大学を通じた家名再興の望みが閉ざされて初めて開いたのだ。その苦さを、堀部も感じていた。</p><p>堀部は、膝の上で握っていた拳を開いた。急げと訴え続けた日々が報われたようには思えなかった。あの日々のあいだに去った仲間があり、戻らぬ命があった。今日ここで討ち入りを決めても、それらが返ってくるわけではない。</p><p class="dialogue">「待ったことを、責めるつもりはありませぬ」</p><p>その声に、内蔵助はわずかに顔を上げた。</p><p class="dialogue">「ただ、これより先は、互いに待たせることなく進みたい」</p><p class="dialogue">「うむ。だが、急ぐことと、粗くすることは違う」</p>
+<p class="dialogue">「では、いよいよ江戸へ」</p>
+<p class="dialogue">「うむ。江戸へ向かう」</p><p class="dialogue">「だが、待った日々を、なかったことにはできぬ」</p><p>内蔵助は言葉を継いだ。</p><p class="dialogue">「大学様のご処分を見届けるために、われらは多くを失った。だが、その日々が無駄であったとは申さぬ。何のために刀を抜くのか、己に問う時を得た」</p><p>一人が膝を進めた。</p><p class="dialogue">「問うた末に、なお命を惜しむ者はどうなります」</p><p>責める調子ではなかった。自分の胸に生じた問いを、ようやく他人の前に置いた声だった。</p><p class="dialogue">「惜しむのは当然だ」</p><p>内蔵助は答えた。</p><p class="dialogue">「命を惜しまぬ者ばかりなら、わしはかえって恐ろしい。生きたいと願いながら、それでも進むと決める。その違いを見失ってはならぬ」</p><p>堀部は黙って聞いていた。かつての自分なら、この言葉を弱さと受け取ったかもしれない。だが、目の前の男がここに至るまで失ったものを、堀部も知らぬわけではなかった。</p>
+<p>内蔵助は言い切った。</p>
+<p class="dialogue">「ただし、勢いだけでは事は成らぬ。われらが何をなすか、誰を巻き込むか、いかに終えるか。ここからは一つずつ詰めねばならぬ」</p>
+<p>原惣右衛門が顔を上げた。</p>
+<p class="dialogue">「年内に、ということですな」</p>
+<p class="dialogue">「そのつもりで支度する」</p><p class="dialogue">「ただ、今日ここで決めるのは心の向きだ。明日からは、心だけでは足りぬ」</p><p>吉田忠左衛門が静かに口を開いた。</p><p class="dialogue">「江戸へ移る者、京に残る者。互いに誰を頼り、どのように便りを通すか。暮らしの始末も要りましょう」</p><p>誰かが小さく頷いた。刀を取ると決めた瞬間から、米を買うこと、旅の費用を工面すること、家へ何を告げるかということまでが、別の意味を帯び始める。</p><p class="dialogue">「役目を分けよう」</p><p>内蔵助は言った。</p><p class="dialogue">「ただし、ここで声を上げた者を、明日も同じ気持ちであろうと決めつけるな。各々、今宵もう一度考えてくれ」</p><p>その言葉に、座敷の奥で一人が顔を伏せた。昨夜、家に残してきた母の咳を思い出したのである。母には旅に出るとだけ告げてきた。行き先も、戻る日も、答えられなかった。</p><p>決議の重さは、座敷にいる十九人だけでは量れない。帰りを待つ者の数だけ、目に見えぬ重りがあった。</p><p>座敷の端で若い者が顔を上げた。膝の上の拳はまだ震えていたが、先ほどまでとは違い、その震えを隠そうとしなかった。</p>
+<p>沈黙が長く続いた。誰かが息を吸い、誰かが膝の上の手を握り直した。</p>
+<p class="dialogue">「私は待ちました」</p>
+<p>堀部が低く言った。</p>
+<p class="dialogue">「待つあいだ、疑うたこともあります。殿の心を、仲間の心を。だが今は、疑いを抱えたままでも進めます」</p>
+<p>内蔵助は堀部を見た。</p>
+<p class="dialogue">「疑いが消えたから進むのではない。消えぬものを抱えて進むのだろう」</p>
+<p>しばらく誰も口を開かなかった。障子の外の蝉の声だけが、遠いもののように聞こえた。</p>
+<p>内蔵助は一同を見渡した。若い顔も、老いた顔もあった。赤穂にいたころは、役目や家格によって座る位置が決まっていた者たちである。今は、同じ危うさの上に座っていた。</p>
+<h2>六　残る者、去る者</h2>
+<p>会議が終わっても、誰もすぐには立たなかった。決めたことを言葉にするのは一刻で済む。決めたことを家へ持ち帰るには、もっと長い時間がいる。</p>
+<p>一人の男が内蔵助の前に進み出た。</p>
+<p class="dialogue">「殿。私は、今夜の決議を家の者に伝えねばなりませぬ」</p>
+<p class="dialogue">「そうしてくれ」</p>
+<p class="dialogue">「止められたら、どうすればよいのでしょう」</p><p>男の声は、会議の最中よりもかすれていた。大勢の前で覚悟を口にすることはできる。だが、妻の前で同じ言葉を言えるかどうかは別だった。</p><p class="dialogue">「妻は、赤穂を出てから一度も、わしに城の話をせぬのです」</p><p>男は続けた。</p><p class="dialogue">「話せば、わしが苦しむと思うておるのでしょう。そんな者に、また苦しみを負わせます」</p><p>内蔵助は自分の家を思った。りくもまた、尋ねたいことを尋ねずにいた夜があった。尋ねられぬから答えずに済んだのではない。答えを渡せなかったのだ。</p>
+<p>内蔵助は答えを急がなかった。</p>
+<p class="dialogue">「家の者が止めるのは、おぬしを失いたくないからだ」</p>
+<p class="dialogue">「それでも、行かねば」</p>
+<p class="dialogue">「行くと決めるのは、おぬしだ。わしが家族の涙まで命じることはできぬ」</p>
+<p>男は深く頭を下げた。礼なのか、苦しみなのか、内蔵助にはわからなかった。</p>
+<p>座敷の隅では、若い者が懐から折りたたんだ紙を出していた。そこには妻の筆跡で、子の熱が下がったことが記されている。男は紙を開き、また畳んだ。</p>
+<p class="dialogue">「主君のために死ぬのが忠義なら、子のために生きるのは何なのでしょうな」</p>
+<p>誰に向けたとも知れぬ呟きだった。</p>
+<p>原は聞こえぬふりをした。聞こえぬふりをすることが、今夜の精一杯の思いやりだった。</p>
+<p>内蔵助は、去る者を臆病者と呼ばぬと心に決めた。残る者を、ただ勇ましい者とも呼ぶまい。選んだ道の先で人は傷つく。その傷を引き受けることまで、誰かに代わってやることはできない。</p>
+<h2>七　誓いを問い直す</h2>
+<p>八月に入った。内蔵助は連判の名を見つめていた。紙の上には、まだ多くの名がある。だがそのすべてが、今も同じ誓いのもとにあるとは限らなかった。</p>
+<p>一度交わした約束を盾にして人を縛れば、討ち入りはできるかもしれない。だが、それは何を守るための行いになるのか。</p>
+<p class="dialogue">「誓いの証を、いったん返すことも考えねばならぬな」</p>
+<p>内蔵助が漏らすと、傍らの者が目を上げた。</p>
+<p class="dialogue">「誓いを、ですか」</p>
+<p class="dialogue">「誓いは、紙に書けば残る。心はそうはいかぬ」</p>
+<p>内蔵助は紙を伏せた。</p>
+<p class="dialogue">「なお志を同じくする者は、己の足で戻ればよい」</p><p>傍らの者は紙に目を落とした。名を記すとき、人は同じ方向を見ていたはずだった。しかし、約束が長く続けば続くほど、その間に生まれた子があり、病む親があり、失われた働き口がある。紙には、その歳月が書き込まれていない。</p><p class="dialogue">「戻らぬ者を恨みますか」</p><p class="dialogue">「恨めば、わしらは何のために立つのかわからなくなる」</p><p>内蔵助はそう答えてから、自分にもその言葉を守れるかと問うた。答えはすぐには出なかった。</p>
+<p>内蔵助にとって大切だったのは、名を集めることではなかった。最後まで同じ重さを背負える者が誰なのか、それを見誤らぬことだった。</p>
+<p>戸の外では、夏の夕立が近づいていた。雲が低く垂れ、遠くで雷が鳴った。</p>
+<h2>終　閉じた道の先</h2>
+<p>夜、内蔵助は豊岡への返書を開いたまま座っていた。子らの名を書こうとして、筆が止まった。主税はすでに、自分と同じ道の近くにいる。幼い子らは、その意味をまだ知らない。</p>
+<p>りくに向けて何を書けばよいのか。『案ずるな』と書くのは嘘になる。『待っていてくれ』と書くには、待つ先の約束がなかった。</p>
+<p>彼は紙を替え、季節の挨拶から書き始めた。山科では蝉が鳴いていること。体を大切にしてほしいこと。ありふれた言葉を一つずつ置いた。</p>
+<p>書かぬことの方が多い文になった。</p><p>子の背丈を尋ねようとして、やめた。返事が来るころには、また伸びているかもしれない。かつては一つ屋根の下で知ることのできた変化を、いまは便りで確かめるほかない。</p><p>りくの筆跡を思い出した。整った文字の間に、ときおり急いで書いたような線が混じる。子が呼んだのか、火の番を気にしたのか。そんなことを考えている間だけ、内蔵助は遠く離れた家の中にいられた。</p>
+<p>ふと、赤穂城を出た日の空を思い出した。あの日、内蔵助は門を閉じたのではない。いつか開く別の門を探しに出たつもりだった。</p>
+<p>その門はもうない。</p>
+<p>だが、道は消えていなかった。これから進む道が正しいかどうか、今の内蔵助には言い切れない。そこに救いがあるとも、誰かが褒めてくれるとも思わなかった。</p>
+<p>それでも、決めた。</p>
+<p>彼は書状を畳み、灯を消した。山科の闇は、昨夜までと少しも変わらない。ただ、その闇の向こうに江戸があった。</p>
+<h2>史実と創作について</h2><div class="note">
+<h3>史実に基づく出来事</h3>
+<p>元禄十五年（1702年）六月二十九日に堀部安兵衛が京都に着いたこと、七月十八日に浅野大学長広の広島藩差し置きが命じられたこと、七月二十八日に円山会議が開かれ、大石・原・堀部ら十九人が仇討ちを決議したことは、赤穂市の年表に基づきます。日付は旧暦です。</p>
+<h3>物語上の創作</h3>
+<p>内蔵助と原・堀部・吉田らの会話、京の町や山科の家の情景、会議の発言順序、会議後の個々の旧臣の相談、りく宛ての手紙の文面、登場人物の内面は小説上の創作です。史料に残る発言をそのまま再現したものではありません。</p>
+<h3>史料上の注意点</h3>
+<p>円山会議の発言や議事の細部は確定できません。本文の討論は創作です。神文・連判の返戻を通じて同志の意思を確かめる動きは、赤穂市の年表では同年八月に記載されています。この章の「誓いを問い直す」は、その時期の大石の思索を描いたもので、具体的な返戻の実施場面を再現したものではありません。七月十八日の処分決定と、その知らせが京都へ届いた日は区別して描いています。堀部の六月二十九日の京都到着は年表に基づきますが、原や大石との個々の対面・書状の文面は創作的構成です。</p>
+<h3>参考資料</h3>
+<p>赤穂市「赤穂義士略式年表」 https://www.city.ako.lg.jp/kensetsu/kankou/samurai/nenpyo2.html ／ 赤穂城デジタルミュージアム「忠臣蔵を生み出した赤穂」 https://ako-castle.jp/learn/the-birthplace-of-chushingura/ ／ 兵庫県立美術館・ネットミュージアム兵庫文学館「忠臣蔵館」 https://www.artm.pref.hyogo.jp/bungaku/kikaku/chushingura/ 。</p>
+</div><nav><a href="chapter05.html">← 前へ</a><a href="index.html">総合目次</a><a href="interlude02.html">次へ →</a></nav></main><footer>赤穂浪士 — 元禄の忠義｜第六章</footer><script>
+(function(){
+  'use strict';
+  const root=document.documentElement;
+  const $=id=>document.getElementById(id);
+  const storage={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+  const modeKey='ako-reading-night',sizeKey='ako-reading-font-size',positionKey='ako-reading-position:chapter06';
+  let night=storage.get(modeKey)==='1'||(storage.get(modeKey)===null&&storage.get('ako-night')==='true');
+  let size=Number(storage.get(sizeKey));if(!Number.isFinite(size)||size<14||size>26||size%2!==0)size=18;
+  const panel=$('reader-panel'),open=$('reader-open'),close=$('reader-close');
+  function setPanel(visible){panel.hidden=!visible;open.setAttribute('aria-expanded',String(visible));if(visible)$('reader-close').focus();else open.focus()}
+  open.addEventListener('click',()=>setPanel(panel.hidden));close.addEventListener('click',()=>setPanel(false));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden)setPanel(false)});
+  document.addEventListener('pointerdown',e=>{if(!panel.hidden&&!panel.contains(e.target)&&!open.contains(e.target)){panel.hidden=true;open.setAttribute('aria-expanded','false')}});
+  function apply(){root.dataset.theme=night?'night':'paper';root.style.setProperty('--reader-font-size',size+'px');$('night-toggle').textContent=night?'通常表示':'夜表示';$('night-toggle').setAttribute('aria-pressed',String(night));$('font-current').textContent=size+'px';$('font-minus').disabled=size<=14;$('font-plus').disabled=size>=26}
+  $('night-toggle').addEventListener('click',()=>{night=!night;storage.set(modeKey,night?'1':'0');apply()});
+  function adjust(delta){size=Math.max(14,Math.min(26,size+delta));storage.set(sizeKey,String(size));apply()}
+  $('font-minus').addEventListener('click',()=>adjust(-2));$('font-plus').addEventListener('click',()=>adjust(2));apply();
+  const progress=$('reading-progress-fill');let pending=false;
+  function update(){const total=Math.max(0,document.documentElement.scrollHeight-innerHeight);progress.style.width=(total?Math.min(100,100*scrollY/total):100)+'%';storage.set(positionKey,String(Math.round(scrollY)));pending=false}
+  addEventListener('scroll',()=>{if(!pending){pending=true;requestAnimationFrame(update)}},{passive:true});addEventListener('resize',update);addEventListener('load',update);
+  $('resume-reading').addEventListener('click',()=>{const saved=Number(storage.get(positionKey));setPanel(false);if(Number.isFinite(saved)&&saved>0)scrollTo({top:Math.min(saved,document.documentElement.scrollHeight-innerHeight),behavior:'smooth'})});
+
+  update();
+})();
+</script></body></html>

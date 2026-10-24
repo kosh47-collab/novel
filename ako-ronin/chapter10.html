@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>第十章 残された春｜赤穂浪士 元禄の忠義</title><style>body{margin:0;background:#f7f2e8;color:#29251e;font-family:'Yu Mincho','Hiragino Mincho ProN',serif;line-height:2.15}main{max-width:750px;margin:auto;padding:45px 22px 100px}h1{font-size:2rem;letter-spacing:.13em}h2{font-size:1.3rem;margin-top:3em;border-bottom:1px solid #b7a991;padding-bottom:.5em}p{text-indent:1em;margin:1.3em 0}.dialogue{text-indent:0;margin-left:1em}.note{background:#eee6d8;padding:20px;font-size:.92rem}header,footer{background:#28342f;color:#f7f2e8;padding:15px 25px}a{color:#79552c}.sub{color:#806d53}button{padding:8px 13px;border:1px solid #aaa;background:transparent;color:inherit;border-radius:6px}body.night{background:#171b1b;color:#ddd5c7}body.night .note{background:#30332f}body.night a{color:#e4bb7e}</style><style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f8f5ee;color:#2c2924;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:18px;line-height:2.25}header,footer{background:#293630;color:#fff;padding:12px 22px}header a,footer a{color:#f2e7d5}main{max-width:770px;margin:auto;padding:34px 23px 90px}h1{font-size:clamp(1.8rem,5vw,2.5rem);letter-spacing:.13em}h2{font-size:1.27em;margin:3em 0 1.5em;border-bottom:1px solid #c9bba6;padding-bottom:.5em}p{margin:1.1em 0;text-indent:1em}p.dialogue{text-indent:0;margin:1.5em 0}p.inner{font-style:italic;color:#625141;margin:1.6em 1em;text-indent:0}p.break{text-align:center;text-indent:0;color:#8b7962;margin:2em 0}nav{display:flex;gap:15px;flex-wrap:wrap}a{color:#73583a}.kicker{color:#826d51;letter-spacing:.14em;font-size:.85em}.note{padding:15px 18px;background:#eee7da;border-left:3px solid #9b7a51;font-size:.85em;line-height:1.8;margin:24px 0}.note p{text-indent:0;margin:.4em 0}ruby rt{font-size:.52em}body.hide-ruby rt{display:none}.reader-tools{position:fixed;z-index:40;top:12px;right:12px;background:#f2eadc;color:#2c2924;border-radius:12px;padding:10px;display:flex;gap:9px;align-items:center;box-shadow:0 5px 22px #0003;font:14px system-ui,sans-serif}.reader-tools button{border:1px solid #9b907d;border-radius:20px;background:white;padding:8px 12px;cursor:pointer;color:#29251f}button:focus-visible{outline:3px solid #8d7452}@media(max-width:700px){.reader-tools{top:auto;bottom:16px;left:12px;right:12px;justify-content:center;transform:translateY(calc(100% + 35px));opacity:0;pointer-events:none;transition:transform .22s,opacity .22s}body.menu-open .reader-tools{transform:translateY(0);opacity:1;pointer-events:auto}}
+/* 組版は一元管理。行末の自動均等化やpretty折返しは使用しない */
+main section p{display:block;max-width:none;width:auto;line-height:1.9;margin:.9em 0;text-align:start;text-wrap:wrap;letter-spacing:normal;word-spacing:normal;white-space:normal;word-break:normal;overflow-wrap:normal;line-break:strict;text-indent:1em}
+main section p.dialogue{margin:.35em 0 .55em;text-indent:0}
+main section p.dialogue+p.dialogue{margin-top:.15em}
+main section p.inner{margin:1em 0 1.1em 1em;text-indent:0;font-style:italic}
+main section p.break{text-align:center;text-indent:0;margin:2em 0}
+main section ruby{white-space:normal}
+@media(max-width:700px){main{padding-left:20px;padding-right:20px}}
+
+main p.dialogue {text-indent:0 !important; margin-top:.28em !important; margin-bottom:.28em !important;}
+main p.dialogue + p.dialogue {margin-top:.12em !important;}
+
+main p.dialogue{text-indent:0!important;margin-top:.28em!important;margin-bottom:.28em!important;}
+
+/* Unified, compact reader controls */
+:root{--reader-font-size:18px}
+html{scroll-behavior:smooth;scroll-padding-top:75px}
+main{font-size:var(--reader-font-size);overflow-wrap:break-word;min-width:0}
+main p,main li,main .person,main .panel{overflow-wrap:break-word}
+.reader-launch{position:fixed;right:max(12px,calc((100vw - 780px)/2));top:12px;z-index:30}
+.reader-launch button,.reader-panel button{font-family:system-ui,sans-serif;border:1px solid var(--line);border-radius:10px;background:var(--soft);color:var(--ink);padding:9px 12px;cursor:pointer;touch-action:manipulation}
+.reader-launch button{box-shadow:0 3px 16px #0002;font-size:13px;min-height:42px}
+.reader-panel[hidden]{display:none!important}
+.reader-panel{position:fixed;right:max(12px,calc((100vw - 780px)/2));top:62px;z-index:31;width:min(355px,calc(100vw - 24px));max-height:calc(100dvh - 78px);overflow:auto;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:15px;box-shadow:0 12px 45px #0004;padding:16px;font-family:system-ui,sans-serif;font-size:14px}
+.reader-panel-head,.reader-option{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.reader-panel-head{padding-bottom:12px;border-bottom:1px solid var(--line)}
+.reader-panel-head button{padding:5px 11px}
+.reader-option{padding:14px 0;border-bottom:1px solid var(--line)}
+.size-buttons{display:flex;align-items:center;gap:8px}
+.size-buttons button{font-size:21px;font-weight:600;width:43px;height:43px;padding:0}
+.size-buttons output{min-width:43px;text-align:center;font-variant-numeric:tabular-nums}
+.reader-panel button:disabled{opacity:.4;cursor:default}
+.reader-links{display:flex;justify-content:space-between;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}
+.reader-links a{color:var(--accent);text-decoration:underline}
+.reader-hint{font-size:12px;line-height:1.7;color:var(--muted);margin:10px 0 0;text-indent:0}
+#reading-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:35;pointer-events:none}
+#reading-progress-fill{height:100%;width:0;background:#aa6d4b;transition:width .1s linear}
+@media(max-width:600px){header{padding-right:145px}main{padding:38px 18px 75px}.people{grid-template-columns:1fr}}
+
+/* Chapter theme and text flow */
+:root{--paper:#f8f5ee;--ink:#2c2924;--muted:#6e6253;--line:#d8ccbb;--accent:#73583a;--soft:#eee7da}
+body{background:var(--paper)!important;color:var(--ink)!important}
+main{font-size:var(--reader-font-size)!important;overflow-wrap:break-word;max-width:770px}
+main section p{overflow-wrap:break-word;word-break:normal;white-space:normal;text-align:left;text-wrap:wrap}
+html[data-theme="night"]{--paper:#1e2324;--ink:#e9e0d3;--muted:#b7aaa0;--line:#555c5c;--accent:#d8bb8d;--soft:#343838;color-scheme:dark}
+html[data-theme="night"] .note{background:#343838;color:var(--ink)}
+html[data-theme="night"] main .inner{color:#c4af91}
+html[data-theme="night"] h2{border-color:#62605b}
+html[data-theme="night"] main a{color:var(--accent)}
+html[data-theme="night"] header a,html[data-theme="night"] footer a{color:#f2e7d5}
+@media(max-width:600px){header{padding-right:150px!important}}
+
+.interlude-intro{font-size:1.06em;line-height:2.0}.map-frame,.diagram{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px;margin:20px 0}.map-frame svg{display:block;width:100%;height:auto}.map-caption,.smallnote{font-size:.78em;color:var(--muted);line-height:1.8;text-indent:0}.people-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.person-card{background:var(--soft);border:1px solid var(--line);padding:13px;border-radius:10px;line-height:1.7}.person-card strong{display:block}.person-card span{display:block;font-size:.82em;color:var(--muted)}.relation{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center}.relation .wide{grid-column:1/-1;text-align:center}.relation .person-card{text-align:center}.relation-arrow{text-align:center;font-size:.8em;color:var(--muted);padding:4px}.timeline{border-left:2px solid var(--accent);margin-left:12px;padding-left:22px}.timeline article{position:relative;margin:0 0 24px}.timeline article:before{content:"";position:absolute;left:-29px;top:10px;width:11px;height:11px;border-radius:50%;background:var(--accent)}.timeline time{font-weight:bold;color:var(--accent)}.timeline p{margin:.3em 0;text-indent:0}.tag{font-size:.8em;color:var(--muted)}.reader-links{flex-wrap:wrap}main .map-frame p,main .diagram p,main .person-card p{ text-indent:0 }@media(max-width:600px){.people-grid{grid-template-columns:1fr}.map-frame,.diagram{padding:10px}.relation{gap:7px}.person-card{padding:9px}}
+
+/* 第一本幕間：図版の横幅と縮尺を保つ */
+.relationship-figure,.accurate-map{width:100%;max-width:100%;overflow:hidden;margin:22px 0;border-radius:12px;}
+.relationship-figure svg,.accurate-map svg{display:block;width:100%;height:auto;aspect-ratio:auto;}
+.relationship-figure{border:1px solid var(--line,#d5c8b4);background:#f8f5ef;}
+body.night .relationship-figure,body.dark .relationship-figure{background:#f8f5ef;}
+.accurate-map{border:1px solid #c5cfc9;}
+@media(max-width:600px){.relationship-figure{overflow-x:auto}.relationship-figure svg{min-width:570px}.accurate-map svg{min-width:0}}
+
+/* 序章と共通の広域地図 */
+.shared-story-map{background:#f1ece2;padding:12px;overflow:hidden}
+.shared-story-map svg{display:block;width:100%;height:auto;max-width:100%}
+.shared-story-map .map-label text{font-size:15px;fill:#473d30;paint-order:stroke;stroke:#f3ebd8;stroke-width:4px;stroke-linejoin:round}
+.shared-story-map .map-label .important{font-size:22px;font-weight:bold}
+.shared-story-map .map-point circle{fill:#6e6556;stroke:#fff7e6;stroke-width:2}
+.shared-story-map .map-point .major{fill:#a14e3d}
+</style><style>/* 第2章の心の声を継承 */
+main p.inner{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-style:italic;color:#625141;margin:1.6em 1em;text-indent:0;line-height:2.25}
+html[data-theme="night"] main p.inner{color:#c4af91}
+main p.dialogue{text-indent:0;margin:.35em 0 .55em}
+</style><style id="unified-navigation-style">.ako-unified-nav{position:sticky;top:0;z-index:9999;background:#292722;color:#fff;padding:9px 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-family:system-ui,sans-serif;font-size:13px;box-shadow:0 2px 7px #0003}.ako-unified-nav a{color:#fff;text-decoration:none;border-bottom:1px solid #ffffff70}.ako-unified-nav select{min-width:150px;max-width:230px;background:#faf7f0;color:#222;border:1px solid #aaa;border-radius:6px;padding:6px;font-size:13px}.ako-unified-nav .ako-label{font-weight:700}.ako-unified-nav .ako-next{margin-left:auto}.ako-unified-nav a[aria-disabled="true"]{opacity:.35;pointer-events:none}@media(max-width:540px){.ako-unified-nav{gap:7px;padding:8px}.ako-unified-nav .ako-label{width:100%;font-size:12px}.ako-unified-nav select{flex:1;min-width:110px}.ako-unified-nav .ako-next{margin-left:0}}</style><style>
+/* Step 3: keep section shortcuts without duplicating chapter navigation. */
+.ako-unified-nav .ako-section-links{display:inline-flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.ako-unified-nav .ako-section-links a{font-size:.83em;opacity:.85}
+</style></head>
+<body><nav aria-label="全編共通の章移動" class="ako-unified-nav"><span class="ako-label">赤穂浪士 — 元禄の忠義</span><a href="index.html">総合目次</a><a href="chapter09.html">← 前へ</a><select aria-label="章を選ぶ" onchange="if(this.value) location.href=this.value"><option value="chapter01.html">第一章　元禄の春</option><option value="chapter02.html">第二章　松の廊下</option><option value="chapter03.html">第三章　赤穂城明け渡し</option><option value="interlude01.html">幕間一　城を失った人々</option><option value="chapter04.html">第四章　山科の静寂</option><option value="chapter05.html">第五章　散りゆく同志</option><option value="chapter06.html">第六章　円山の決断</option><option value="interlude02.html">幕間二　城を離れて、道を選ぶ</option><option value="chapter07.html">第七章　誓いの行方</option><option value="chapter08.html">第八章　江戸の夜を測る</option><option value="chapter09.html">第九章　雪の門</option><option selected="selected" value="chapter10.html">第十章　残された春</option></select></nav><header>赤穂浪士 — 元禄の忠義</header><div class="reader-launch"><button aria-controls="reader-panel" aria-expanded="false" aria-label="読書メニューを開く" id="reader-open" type="button">☰ <span>読書メニュー</span></button></div><div class="reader-panel" hidden="" id="reader-panel"><div class="reader-panel-head"><strong>読書メニュー</strong><button aria-label="閉じる" id="reader-close" type="button">✕</button></div><div class="reader-option"><span>画面表示</span><button id="night-toggle" type="button">夜表示</button></div><div class="reader-option"><span>文字サイズ</span><div class="size-buttons"><button aria-label="文字を小さくする" id="font-minus" type="button">−</button><output aria-live="polite" id="font-current">18px</output><button aria-label="文字を大きくする" id="font-plus" type="button">＋</button></div></div><div class="reader-links"><a href="chapter09.html">← 第九章</a><a href="index.html">総合目次</a></div><div class="reader-option"><span>前回の位置</span><button id="resume-reading" type="button">続きから</button></div><p class="reader-hint">表示設定は各章と共通です。読書位置はこのページごとに保存します。</p></div><main><h1>残された春</h1><p>元禄十五年十二月十五日。泉岳寺の門が見えた。内蔵助は歩みを緩め、主君の眠る寺を見上げた。</p><h2>序　寺へ続く道</h2><p>主税は列の中から父の背を見た。吉良邸で交わした言葉は短かった。今なら、もう少し話せるのではないかと思った。</p><p class="inner">父上に、何を伝えたいのだろう。</p><p>無事であったことか。怖かったことか。最後まで逃げなかったことか。どれも言葉にすると、違う気がした。</p><p>寺の門が近づく。主税は結局、何も言わなかった。父も振り返らなかった。</p><p>その沈黙が、今朝の二人には許されていた。</p><h2>一　墓前</h2><p>浅野内匠頭の墓前に立つと、内蔵助はようやく長い息を吐いた。持参した吉良の首級を供え、同志たちはそれぞれの思いで手を合わせた。</p><p>ここへ来ることだけを目指していた。道のりを思えば、胸に湧くものは数えきれない。けれど墓石は、何も答えなかった。</p><p class="dialogue">「殿」</p><p>内蔵助の声はかすれた。</p><p class="dialogue">「遅うなりました」</p><p>それ以上は言えなかった。報告すべきことは幾つもある。失った城、散った家臣、残した妻子。すべてを語るには、あまりに静かな朝だった。</p><p class="inner">お許しくださるだろうか。</p><p>自分でも意外だった。赦しを求めるためにここまで来たつもりはなかった。なのに、口にできなかった問いが、墓前で初めて胸の内に浮かんだ。</p><p>安兵衛は少し離れたところで頭を垂れていた。内蔵助の背中を見て、何か言おうとしたが、やめた。</p><p>安兵衛は口を閉じ、もう一度深く頭を下げた。</p><h2>二　それぞれの家</h2><p>浪士たちの行動は幕府に報告された。吉田忠左衛門と富森助右衛門が届け出たことも、やがて人々の知るところとなる。</p><p>吉良を討ち取ったという知らせが広がる一方、屋敷に押し入り人を斬ったという事実も、江戸の町から消えはしなかった。</p><p>四十六人は四つの大名家へ分けて預けられた。内蔵助は細川家へ、主税は松平家へ。毛利家、水野家にも同志たちが向かった。寺坂吉右衛門の姿は、そこになかった。</p><p>門をくぐるとき、内蔵助は自分の刀に目を落とした。昨日まで握っていた柄が、今は遠いものに思えた。</p><p>預けられた先には、食事も寝具もあった。戦いの夜には考えられなかったほど、静かな暮らしだった。</p><p>それが、かえって身にこたえた。</p><p>夜になると、内蔵助は廊下の足音に耳を澄ませた。仲間の知らせか。裁定か。それとも、ただの用向きか。</p><p class="inner">待つことには、もう慣れたはずだ。</p><p>だが、討ち入り前の待つ日々には、自分で選べる明日があった。今は違う。</p><h2>三　届かぬ声</h2><p>江戸の人々の間には、浪士たちを称える声が広がった。一方で、幕府の定めを破った行為をどう裁くべきかという問いも残った。</p><p>ある者は義を語り、ある者は法を語る。どちらの言葉も、傷ついた家々の暮らしをすべて言い表せるわけではなかった。</p><p>吉良家にも、討ち入りの夜に命を落とした者、傷を負った者がいた。守ろうとした屋敷を破られた家族がいた。</p><p>けれど町の噂に上るのは、浪士たちの名ばかりだった。</p><p>内蔵助のもとへも、さまざまな評判が断片となって届いた。</p><p class="dialogue">「皆が、我らを褒めているそうです」</p><p>預け先で世話をする者が、遠慮がちに言った。</p><p>内蔵助は礼を述べようとした。だが口から出たのは、別の言葉だった。</p><p class="dialogue">「それは、困ったことだ」</p><p>相手は返す言葉を失い、そっと頭を下げた。内蔵助はその姿を見ながら、膝の上に置いた手を動かさなかった。</p><p class="inner">わしは、褒められたかったのではないか。</p><p>褒められたかった時も、きっとあった。だが今は、称賛の声が大きくなるほど、討ち入りの夜に消えた声が遠のく気がした。</p><h2>四　父と子の距離</h2><p>父がどんな朝を迎えたか、主税にはわからなかった。父もまた、息子が夜に何を考えるかを知ることはできなかった。</p><p>主税は、父の言葉を思い返した。</p><p class="dialogue">「帯を直せ」</p><p>出陣前の、あまりにありふれた一言だった。</p><p>あのとき父は、何を言いかけたのだろう。今になって尋ねたくなった。</p><p class="inner">怖いか、と聞かれたなら、何と答えただろう。</p><p>怖くありません、と言ったかもしれない。実際には、怖かった。自分の声が震えなかったことさえ、不思議だった。</p><p>主税は膝の上に手を置いた。もう帯を直す必要はない。それでも指先は、結び目を探すように動いた。</p><p>その仕草に気づき、思わず小さく笑った。笑ってから、目の奥が熱くなった。</p><h2>五　裁定</h2><p>元禄十六年二月四日。幕府の裁定が下った。</p><p>四十六人に命じられたのは、切腹だった。大名家の屋敷に預けられた日から、幾度となく思い描いた知らせであった。それでも、実際に言い渡されると、部屋の空気が変わった。</p><p>知らせを受けた内蔵助は、しばらく黙っていた。</p><p>生きたいと思わなかったわけではない。生き延びて、子らの行く末を見たいと思う心は、今もあった。</p><p class="inner">生きたい。</p><p>その言葉が浮かんだ瞬間、内蔵助は背筋を伸ばした。</p><p class="dialogue">「承りました」</p><p>声は、思いのほか落ち着いていた。</p><p>生きたいと願いながら、命を受け入れる。その矛盾を、内蔵助はもう解こうとはしなかった。</p><p>主税のもとにも裁定が届いた。告げる者の声が途切れると、部屋の静けさが急に深くなった。主税は膝の上の手を開き、また閉じた。</p><p>ただ、父と子が同じ日に命を終えることだけは、変わらなかった。</p><h2>六　それぞれの最期</h2><p>預けられた四家の屋敷では、それぞれに最期の時が近づいていた。ある者は黙って身を整え、ある者は傍らの人に短く礼を述べた。静けさの中にも、衣擦れや足音があった。</p><p>内蔵助は、身を整えた。</p><p>戦いの夜、あれほど重かった刀の感触はもうない。代わりに、長い月日が一度に肩へ戻ってきたようだった。</p><p>赤穂を去った日。人々の顔。祇園で交わした酒。疑われた日々。討ち入り前に消した灯。</p><p>そのどれもが、勝利という一語には収まらなかった。</p><p class="inner">わしは、よくやったのだろうか。</p><p>答えは出なかった。</p><p>けれど、答えのないまま歩いてきた日々を、今さら否定することもできなかった。</p><p>内蔵助は目を閉じた。</p><p>元禄十六年二月四日。四家に預けられた四十六人は、それぞれの屋敷で命を終えた。</p><h2>七　残された人々</h2><p>春を迎えても、残された人々の暮らしは続いた。</p><p>妻は夫のいない朝を迎え、子は父のいない食卓に座る。討ち入りの知らせを誇らしく語る人々がいても、家の中にできた空席が埋まるわけではない。</p><p>赤穂を去った旧臣たちにも、それぞれの暮らしがあった。最後まで加わらなかった者、加われなかった者、誓いを返した者。</p><p>討ち入りに加わらなかった者にも、冬は長かった。誰に弁明することもできず、明日を生きていく者がいた。</p><p>寺坂吉右衛門もまた生きた。四十七人という数の中に名を連ねながら、四十六人と同じ日に死ななかった男のその後には、異なる重さがあった。</p><p>名が残る者にも、残らぬ者にも、冬のあとには春が来た。</p><p>生きている者は、悲しみを抱えたまま、その春を越えていかなければならなかった。</p><h2>終　名を呼ぶ者</h2><p>泉岳寺の墓前には、季節が巡るたびに人が訪れた。</p><p>まだ幼い子が、並んだ石の前で立ち止まった。連れてきた男は一つずつ名を読んで聞かせたが、途中で声がかすれた。</p><p class="dialogue">「どうして、みんな死んだの」</p><p>男はすぐには答えなかった。忠義のため、と言えば足りるのだろうか。主君の無念のため、と言えば、この子に伝わるのだろうか。</p><p class="dialogue">「……それぞれに、守りたいものがあったのだろう」</p><p>男はその先を言わなかった。守りたいものがあっても、残していかなければならなかったものがある。そのことを、どう話せばよいのかわからなかった。</p><p>子は石の文字を指で追おうとして、手を止めた。</p><p class="dialogue">「この人にも、家族がいたの」</p><p class="dialogue">「いたとも」</p><p>男の返事を聞くと、子はもう尋ねなかった。小さな手を合わせ、見よう見まねで頭を下げた。</p><p>あの夜、灯は一つ消された。父が息子にかけ損ねた言葉も、息子が父に尋ねられなかったことも、どこにも刻まれていない。</p><p>それでも、名を呼ぶ人がいた。答えの出ない問いを、次の誰かに渡す人がいた。</p><p>男と子が去ったあと、墓前にはまた静けさが戻った。</p><p>春の光が、石に刻まれた名を一つずつ照らしていた。</p><h2>史実と創作について</h2><p>史実の骨格：元禄15年12月15日の泉岳寺参詣、浪士46人の四家へのお預け、元禄16年2月4日の切腹命令と執行、泉岳寺への埋葬を基にした。日付は旧暦。</p><p>寺坂吉右衛門：討ち入りに参加した47人のうち、幕府の裁定を受けて切腹したのは46人。寺坂が一行から離れた事情には諸説があり、本章では理由を断定していない。</p><p>創作：墓前の発言、預け先での会話、心の声、身振り、主税の記憶、個々の最期の内面は小説としての想像である。内蔵助と主税は別々の預け先にいた。終章に登場する後世の墓参者の親子とその会話も創作であり、実在の特定人物を指さない。</p></main><footer>赤穂浪士 — 元禄の忠義｜第十章（完成稿）</footer><script>
+(function(){
+  'use strict';
+  const root=document.documentElement;
+  const $=id=>document.getElementById(id);
+  const storage={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+  const modeKey='ako-reading-night',sizeKey='ako-reading-font-size',positionKey='ako-reading-position:chapter10';
+  let night=storage.get(modeKey)==='1'||(storage.get(modeKey)===null&&storage.get('ako-night')==='true');
+  let size=Number(storage.get(sizeKey));if(!Number.isFinite(size)||size<14||size>26||size%2!==0)size=18;
+  const panel=$('reader-panel'),open=$('reader-open'),close=$('reader-close');
+  function setPanel(visible){panel.hidden=!visible;open.setAttribute('aria-expanded',String(visible));if(visible)$('reader-close').focus();else open.focus()}
+  open.addEventListener('click',()=>setPanel(panel.hidden));close.addEventListener('click',()=>setPanel(false));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden)setPanel(false)});
+  document.addEventListener('pointerdown',e=>{if(!panel.hidden&&!panel.contains(e.target)&&!open.contains(e.target)){panel.hidden=true;open.setAttribute('aria-expanded','false')}});
+  function apply(){root.dataset.theme=night?'night':'paper';root.style.setProperty('--reader-font-size',size+'px');$('night-toggle').textContent=night?'通常表示':'夜表示';$('night-toggle').setAttribute('aria-pressed',String(night));$('font-current').textContent=size+'px';$('font-minus').disabled=size<=14;$('font-plus').disabled=size>=26}
+  $('night-toggle').addEventListener('click',()=>{night=!night;storage.set(modeKey,night?'1':'0');apply()});
+  function adjust(delta){size=Math.max(14,Math.min(26,size+delta));storage.set(sizeKey,String(size));apply()}
+  $('font-minus').addEventListener('click',()=>adjust(-2));$('font-plus').addEventListener('click',()=>adjust(2));apply();
+  const progress=$('reading-progress-fill');let pending=false;
+  function update(){const total=Math.max(0,document.documentElement.scrollHeight-innerHeight);progress.style.width=(total?Math.min(100,100*scrollY/total):100)+'%';storage.set(positionKey,String(Math.round(scrollY)));pending=false}
+  addEventListener('scroll',()=>{if(!pending){pending=true;requestAnimationFrame(update)}},{passive:true});addEventListener('resize',update);addEventListener('load',update);
+  $('resume-reading').addEventListener('click',()=>{const saved=Number(storage.get(positionKey));setPanel(false);if(Number.isFinite(saved)&&saved>0)scrollTo({top:Math.min(saved,document.documentElement.scrollHeight-innerHeight),behavior:'smooth'})});
+
+  update();
+})();
+</script></body></html>
