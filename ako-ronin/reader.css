@@ -45,3 +45,47 @@ dialog.reader-panel .reader-links{margin:0;padding:12px 16px;justify-content:spa
 dialog.reader-panel .reader-hint{margin:0;padding:12px 16px;color:var(--ink)}
 dialog.reader-panel button{flex-shrink:0}
 @media(max-width:380px){dialog.reader-panel .reader-option{flex-wrap:wrap}.book-nav select{flex-basis:100%}}
+/* Final typography shared by the complete book. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:16px}
+body{background:var(--paper);color:var(--ink);font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:18px;line-height:1.95;min-width:0}
+main{box-sizing:border-box;max-width:770px;margin:0 auto;padding:34px 22px 64px;font-size:var(--reader-font-size);min-width:0}
+main h1{font-size:clamp(1.65rem,5.5vw,2.5rem);line-height:1.6;letter-spacing:.08em;margin:14px 0 28px;overflow-wrap:anywhere}
+main h2,main section h2{font-size:1.25em;line-height:1.65;margin:2.8em 0 1.3em;padding:0 0 .55em;border-bottom:1px solid var(--line);letter-spacing:.03em}
+main p,main section p,main p.prose,main section p.prose{font-size:1em;line-height:1.95;letter-spacing:normal;word-spacing:normal;text-align:start;text-wrap:wrap;white-space:normal;word-break:normal;overflow-wrap:break-word;line-break:strict;text-indent:1em;margin:1.1em 0;max-width:none;width:auto}
+main p.dialogue,main section p.dialogue{font-size:1em;line-height:1.95;text-indent:0;margin:1.3em 0}
+main p.inner,main section p.inner{font-size:1em;line-height:1.95;text-indent:0;margin:1.3em 1em;color:var(--muted,#6e6253)}
+main p.sub,main p.lead,main p.interlude-intro{font-size:1em;line-height:1.95;text-indent:0;margin:0 0 2em;color:var(--ink)}
+main .chapter-label{font:14px/1.6 system-ui,sans-serif;color:var(--muted,#6e6253);letter-spacing:.08em;margin:0}
+.contents-title span,.contents-title small{display:block}
+main .contents-title{margin:0 0 30px;font-size:clamp(2rem,8vw,3rem);letter-spacing:.08em}
+.contents-title small{font-size:.55em;letter-spacing:.16em;margin-top:6px;font-weight:400}
+main .chapter{display:grid;grid-template-columns:64px minmax(0,1fr) 18px;gap:12px;padding:18px 10px;align-items:center}
+main .chapter span:first-child{width:auto;font-size:13px}
+main .chapter strong{font-size:1em;line-height:1.7;overflow-wrap:anywhere}
+main>p.note{background:transparent;border:0;font:14px/1.8 system-ui,sans-serif;text-indent:0;padding:0;margin-top:28px;color:var(--muted,#6e6253)}
+.book-header{text-align:left;line-height:1.6}
+.book-header .book-title{font-size:16px;line-height:1.6;margin:0 0 12px;letter-spacing:0}
+.book-header .book-nav{display:grid;grid-template-columns:repeat(3,max-content);gap:10px 20px}
+.book-nav select{grid-column:1/-1;width:100%;min-width:0;max-width:100%;font-size:16px;box-sizing:border-box;line-height:1.5;min-height:44px}
+.book-footer nav{line-height:1.6}
+.book-footer p{font:14px/1.8 system-ui,sans-serif;text-indent:0;margin:16px 0 0}
+main .historical-note .historical-note-body{font-size:.9em;line-height:1.9;padding:18px 20px}
+main .historical-note .historical-note-body p{font-size:1em;line-height:1.9;text-indent:0;margin:.8em 0;overflow-wrap:anywhere}
+main .historical-note .historical-note-body h3{font-size:1em;line-height:1.7;letter-spacing:0;margin:1.5em 0 .7em;border:0;padding:0}
+main .historical-note .historical-note-body h3:first-child{margin-top:0}
+main svg{max-width:100%;height:auto}
+main .diagram,main .relation-wrap,main .map-wrap{max-width:100%;box-sizing:border-box;overflow-x:auto}
+dialog.reader-panel{max-height:calc(var(--reader-viewport-height,100dvh) - 24px);font:14px/1.5 system-ui,sans-serif}
+dialog.reader-panel .reader-option{padding:10px 14px;min-width:0}
+dialog.reader-panel .reader-option>span{min-width:0;overflow-wrap:anywhere}
+dialog.reader-panel .reader-panel-head{padding:10px 14px}
+dialog.reader-panel .reader-links{padding:10px 14px;gap:10px}
+dialog.reader-panel .reader-hint{font-size:12px;line-height:1.7;padding:10px 14px}
+dialog.reader-panel button{font-size:14px;line-height:1.4;padding:8px 10px}
+@media(max-width:380px){main{padding:28px 16px 56px}.book-header .book-nav{gap:8px 16px}.reader-launch{right:12px}main .historical-note .historical-note-body{padding:16px}}
+@media print{.reader-launch,.reader-panel,#reading-progress{display:none!important}.book-header,.book-footer{background:white;color:#29251e}main{max-width:none}}
+/* Show both sides of each relationship diagram at the same time. */
+main .relationship-figure{width:100%;max-width:100%;box-sizing:border-box;overflow:visible}
+main .relationship-figure svg{display:block;width:100%;min-width:0;max-width:100%;height:auto}
+.book-header .book-nav{grid-template-columns:repeat(3,minmax(0,1fr));width:100%;max-width:770px}
+.book-header .book-nav a{justify-self:start}
