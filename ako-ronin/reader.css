@@ -89,3 +89,8 @@ main .relationship-figure{width:100%;max-width:100%;box-sizing:border-box;overfl
 main .relationship-figure svg{display:block;width:100%;min-width:0;max-width:100%;height:auto}
 .book-header .book-nav{grid-template-columns:repeat(3,minmax(0,1fr));width:100%;max-width:770px}
 .book-header .book-nav a{justify-self:start}
+
+main .historical-note-body .reference-list{padding-left:1.3em;margin:.7em 0 0;line-height:1.8}
+main .historical-note-body .reference-list li{margin:.65em 0;overflow-wrap:anywhere}
+main .historical-note-body .reference-list a{color:var(--accent,#73583a);text-underline-offset:.2em}
+main .historical-note-body .note-dates{font-size:.9em;color:var(--muted,#6e6253);margin:0 0 1em}
